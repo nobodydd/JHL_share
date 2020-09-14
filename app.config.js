@@ -2,7 +2,7 @@
 window.appConfig = {
 
     //部署版本时,运维只需要修改这个地址即可
-    baseUrl: 'http://219.147.31.38:8126/',      //微服务地址  
+    baseUrl: 'https://testxwj.juhaolian.cn/',      //微服务地址  
 
 
 
