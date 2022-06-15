@@ -1,1 +1,26 @@
-<!DOCTYPE html><html lang=en><head><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><link rel=icon href=favicon.ico><script src=./app.config.js></script><title></title><link href=css/chunk-06148cbf.9901c005.css rel=prefetch><link href=css/chunk-1f2be2b1.be2c6a7e.css rel=prefetch><link href=css/chunk-3660240b.fe36119b.css rel=prefetch><link href=css/chunk-36d24de8.87d3bac1.css rel=prefetch><link href=css/chunk-5254bba0.4dc2bcdb.css rel=prefetch><link href=js/chunk-06148cbf.2ba30167.js rel=prefetch><link href=js/chunk-1f2be2b1.e20354c9.js rel=prefetch><link href=js/chunk-3660240b.d602664e.js rel=prefetch><link href=js/chunk-36d24de8.e7b558e6.js rel=prefetch><link href=js/chunk-5254bba0.99eb727f.js rel=prefetch><link href=css/app.a7a80ffe.css rel=preload as=style><link href=css/chunk-vendors.23c95624.css rel=preload as=style><link href=js/app.0928316c.js rel=preload as=script><link href=js/chunk-vendors.dcab2cfb.js rel=preload as=script><link href=css/chunk-vendors.23c95624.css rel=stylesheet><link href=css/app.a7a80ffe.css rel=stylesheet></head><body><noscript><strong>We're sorry but xwjmall doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=js/chunk-vendors.dcab2cfb.js></script><script src=js/app.0928316c.js></script></body></html>
+
+<html lang="en">
+<head>
+    <meta name="apple-mobile-web-app-capable" content="yes"><!--定义应用全屏展示的-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"> <!--设置状态栏的属性值，只有在定义了 apple-mobile-web-app-capable的前提下才有效。-->
+    <meta content="text/html charset=UTF-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" /> <!--width用于指定宽度，initial-scale指定初始化的缩略比例，minimum-scale指定缩小的比例，而maximum-scale则是放大的比例，当然这些缩放都取决于user-scalable——决定用户是否能缩放页面。-->
+<link rel="apple-touch-startup-image" sizes="2048x1496" href=""> <!--设置快捷方式的启动页，也就是快捷方式点击后，在启动APP之前展示的那个页面，不建议设置-->
+    <link rel="apple-touch-icon" href="./assets/icon_logo.png"> <!-- 快捷方式的图标，有两种属性值apple-touch-icon和apple-touch-icon-precomposed，区别就在于是否会应用iOS中自动给图标添加的那层高光。-->
+    <title>快捷方式</title> <!-- 这个title将会是桌面快捷方式的默认标题，在生成时可以手动修改 -->
+</head>
+<body>
+<!-- href后的链接是APP对外开放的scheme，只有scheme与APP中设置的一致，才能打开APP，
+而scheme后面的值可以作为打开APP后的特殊操作，如果仅仅是打开，后面随便写就行，APP中不进行处理即可 -->
+    <a href="https://shop.juhaolian.cn/EasyLinkShare/deviceConfig" id="qbt" style="display:none"></a> 
+    <span id="msg"></span>
+</body>
+<script>
+
+if (window.navigator.standalone == true) {
+    var lnk = document.getElementById("qbt").click();
+} else {
+    document.getElementById("msg").innerHTML='<center><img width = 400.000000 src="./assets/icon_logo.png"></center>';
+}
+</script>
+</html>
